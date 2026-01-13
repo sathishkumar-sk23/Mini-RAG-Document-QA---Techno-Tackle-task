@@ -1,4 +1,3 @@
-```md
 # Mini RAG Document Q&A
 
 This project is a simple **Retrieval-Augmented Generation (RAG)** application that allows users to upload documents and ask questions based only on the content of those documents.
@@ -124,5 +123,3 @@ The model is explicitly instructed to:
 A working end-to-end **Document Question Answering system** using RAG principles.
 
 ---
-
-```
