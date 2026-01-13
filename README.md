@@ -45,7 +45,7 @@ Mini-RAG-Document-QA/
 
 ---
 
-## ⚙️ How It Works (High Level)
+## ⚙️ How It Works
 
 1. User uploads documents (PDF/TXT)
 2. Documents are split into chunks
@@ -54,61 +54,6 @@ Mini-RAG-Document-QA/
 5. User question is converted into a vector
 6. Relevant document chunks are retrieved using similarity search
 7. Groq LLM generates an answer using retrieved context only
-
----
-
-## ▶️ How to Run the App
-
-### 1️⃣ Create virtual environment
-```bash
-python -m venv venv
-````
-
-### 2️⃣ Activate virtual environment
-
-**Windows (CMD):**
-
-```cmd
-venv\Scripts\activate
-```
-
----
-
-### 3️⃣ Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-### 4️⃣ Set environment variable
-
-Create a `.env` file:
-
-```env
-GROQ_API_KEY=your_groq_api_key_here
-```
-
----
-
-### 5️⃣ Run the Streamlit app
-
-```bash
-streamlit run app.py
-```
-
----
-
-## 🛑 Hallucination Control
-
-The model is explicitly instructed to:
-
-* Answer **only from retrieved document context**
-* Respond with
-  **"I don’t know based on the given documents."**
-  if the answer is not present
-
 ---
 
 ## 📌 Notes
